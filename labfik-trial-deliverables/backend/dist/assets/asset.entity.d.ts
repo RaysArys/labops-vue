@@ -1,0 +1,35 @@
+import { AssetKategori, AssetKondisi, AssetStatus, ApprovalStatus } from './enums/asset-status.enum';
+export declare class Asset {
+    asset_id: string;
+    nama_aset: string;
+    kategori: AssetKategori;
+    subkategori: string;
+    merek: string;
+    model: string;
+    serial_number: string;
+    no_inventaris: string;
+    tahun_perolehan: number;
+    qty_sistem: number;
+    satuan: string;
+    kondisi: AssetKondisi;
+    status_aset: AssetStatus;
+    criticality: string;
+    gedung: string;
+    lantai: string;
+    ruangan: string;
+    rak: string;
+    pic_pengguna: string;
+    unit_pemilik: string;
+    supplier: string;
+    contract_sla: string;
+    foto: Buffer | null;
+    catatan: string;
+    atribut_kategori: Record<string, unknown>;
+    status_approval: ApprovalStatus;
+    diajukan_oleh: string;
+    disetujui_oleh: string;
+    waktu_approval: Date | null;
+    organizational_unit_id: string;
+    created_at: Date;
+    updated_at: Date;
+}
