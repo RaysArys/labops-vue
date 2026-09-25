@@ -198,6 +198,16 @@ button {
 .icon-btn:hover {
   background: var(--green-50);
 }
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .main-shell {
   margin-left: 248px;
   min-width: 0;

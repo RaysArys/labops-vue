@@ -21,7 +21,11 @@
       </nav>
       <div class="sidebar-foot">
         <button class="icon-btn" title="Keluar" @click="auth.logout()">
-          â†ª
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
+            <path d="m17 16 4-4-4-4" />
+            <path d="M21 12H10" />
+          </svg>
         </button>
       </div>
     </aside>
