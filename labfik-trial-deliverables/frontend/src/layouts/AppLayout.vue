@@ -19,6 +19,11 @@
           ><span>{{ item.label }}</span></RouterLink
         >
       </nav>
+      <div class="sidebar-foot">
+        <button class="icon-btn" title="Keluar" @click="auth.logout()">
+          â†ª
+        </button>
+      </div>
     </aside>
     <div
       v-if="mobileOpen"
