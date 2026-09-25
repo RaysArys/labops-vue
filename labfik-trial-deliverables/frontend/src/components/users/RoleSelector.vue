@@ -33,3 +33,9 @@ defineEmits<{
   "update:modelValue": [value: Role];
 }>();
 </script>
+
+<style scoped>
+.role-grid button strong {
+  font-size: 12px;
+}
+</style>

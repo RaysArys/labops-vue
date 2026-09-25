@@ -88,3 +88,14 @@ const {
   save,
 } = useUserCreate();
 </script>
+
+<style scoped>
+.user-form .form-grid > label input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 14px;
+}
+</style>

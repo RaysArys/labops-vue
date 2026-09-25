@@ -19,16 +19,6 @@
           ><span>{{ item.label }}</span></RouterLink
         >
       </nav>
-      <div class="sidebar-foot">
-        <div class="avatar">{{ initials }}</div>
-        <div>
-          <strong>{{ auth.user?.nama || roleName }}</strong
-          ><span>{{ roleName }}</span>
-        </div>
-        <button class="icon-btn" title="Keluar" @click="auth.logout()">
-          ↪
-        </button>
-      </div>
     </aside>
     <div
       v-if="mobileOpen"
