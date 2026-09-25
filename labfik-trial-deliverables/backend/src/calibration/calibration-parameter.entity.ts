@@ -38,7 +38,7 @@ export class CalibrationParameter {
   @Column()
   dibuat_oleh: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   diubah_oleh: string | null;
 
   @CreateDateColumn()

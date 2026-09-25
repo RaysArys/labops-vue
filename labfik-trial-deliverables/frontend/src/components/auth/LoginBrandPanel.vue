@@ -11,7 +11,7 @@
         Portal terintegrasi untuk inventaris, kalibrasi, stock opname, dan
         pemeliharaan Laboratorium FIK.
       </p>
-      <span class="secure-pill">● Aman　·　Terintegrasi　·　Efisien</span>
+
     </div>
     <footer>© 2026 Laboratorium FIK UPN Veteran Jakarta</footer>
   </section>

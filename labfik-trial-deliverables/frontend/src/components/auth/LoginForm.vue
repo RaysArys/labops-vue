@@ -4,7 +4,7 @@
     <form class="login-card" @submit.prevent="$emit('submit')">
       <img src="/logo192.png" alt="UPNVJ" />
       <h2>Selamat datang!</h2>
-      <p>Masuk untuk mengelola operasional laboratorium.</p>
+      <p class="login-description">Masuk untuk mengelola operasional laboratorium.</p>
       <div v-if="error" class="alert danger">{{ error }}</div>
 
       <template v-if="mode === 'local'">
@@ -27,10 +27,6 @@
         </button>
       </template>
       <template v-else>
-        <div class="sso-info">
-          <strong>Single Sign-On UPNVJ</strong
-          ><span>Gunakan akun Keycloak sesuai role lo.</span>
-        </div>
         <button
           type="button"
           class="btn primary full"
@@ -40,7 +36,6 @@
           {{ busy ? "Mengalihkan…" : "Masuk dengan Keycloak" }} <span>→</span>
         </button>
       </template>
-      <small>Gunakan akun yang diberikan administrator LabOps FIK.</small>
     </form>
   </section>
 </template>
@@ -64,3 +59,9 @@ defineEmits<{
 
 const mode = computed(() => props.mode);
 </script>
+
+<style scoped>
+.login-description {
+  font-size: 13px !important;
+}
+</style>

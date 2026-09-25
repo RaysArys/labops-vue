@@ -71,7 +71,7 @@ export class WorkOrder {
   @Column({ type: 'timestamp', nullable: true })
   waktu_laporan_ke_wadek: Date | null;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   dilaporkan_ke_wadek_oleh: string | null;
 
   @CreateDateColumn()
